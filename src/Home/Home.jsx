@@ -16,7 +16,7 @@ const Home = () => {
             </div>
 
             {/* All Restuarents */}
-            <div className='mt-10'>
+            <div className='my-10'>
                 <AllData></AllData>
             </div>
 
