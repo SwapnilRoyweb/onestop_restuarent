@@ -15,7 +15,7 @@ const AllData = () => {
 
     return (
         <div className='w-full flex justify-center items-center'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5'>
                 {
                     restuarents.map(restuarent => <RestuarentCard key={restuarent._id} restuarent={restuarent}></RestuarentCard>)
                 }
