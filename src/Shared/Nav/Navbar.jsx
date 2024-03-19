@@ -17,7 +17,7 @@ const Navbar = () => {
                 </div>
                 <div className="dropdown dropdown-bottom lg:dropdown-right">
                     <div tabIndex={0} role="button" className="m-1 btn h-fit btn-accent btn-xs sm:btn-sm md:btn-md"><TbFilterBolt className='text-md md:text-xl' /><span className='font-bold'>Filter</span></div>
-                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-3 shadow bg-white rounded-box w-40 text-black">
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-3 shadow-2xl shadow-slate-400 bg-white rounded-box w-40 text-black">
                         <li><a>Item 1</a></li>
                         <li><a>Item 2</a></li>
                     </ul>
@@ -26,8 +26,12 @@ const Navbar = () => {
             </div>
 
 
-            <div>
-                <p>Profile</p>
+            <div className='flex flex-col justify-center items-center mt-5'>
+                <div className="avatar">
+                    <div className="w-12 rounded-full ring ring-primary">
+                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    </div>
+                </div>
             </div>
             {/* Temporary button for admin panel */}
             {/* <div className='w-full flex flex-row items-center justify-center gap-5'>
