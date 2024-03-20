@@ -9,7 +9,7 @@ const Navbar = () => {
             <h1 className='text-3xl lg:text-5xl uppercase font-extrabold mt-3'>Onestop</h1>
 
             {/* Search bar */}
-            <div className='hidden md:flex flex-row gap-3 justify-center items-center mt-5'>
+            <div className='hidden sm:flex flex-row gap-3 justify-center items-center mt-5'>
                 <label htmlFor="search"></label>
                 <div className='flex flex-row justify-center items-center gap-1'>
                     <input type="text" name="" id="" className='w-11/12 md:w-96 p-3 rounded-full bg-gradient-to-l from-[#FFDEE9] to-[#B5FFFC] text-xl font-semibold' />
