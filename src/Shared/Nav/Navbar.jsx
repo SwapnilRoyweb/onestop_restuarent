@@ -17,9 +17,11 @@ const Navbar = () => {
                 </div>
                 <div className="dropdown dropdown-bottom lg:dropdown-right">
                     <div tabIndex={0} role="button" className="m-1 btn h-fit btn-accent btn-xs sm:btn-sm md:btn-md"><TbFilterBolt className='text-md md:text-xl' /><span className='font-bold'>Filter</span></div>
-                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-3 shadow-2xl shadow-slate-400 bg-white rounded-box w-40 text-black">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-3 shadow-2xl shadow-slate-800 bg-white rounded-box w-40 text-black">
+                        <li className='hover:bg-slate-300 rounded-lg font-semibold'><a>Category</a></li>
+                        <li className='hover:bg-slate-300 rounded-lg font-semibold'><a>Top Rated Food</a></li>
+                        <li className='hover:bg-slate-300 rounded-lg font-semibold'><a>Top Rated Restuarent</a></li>
+                        <li className='hover:bg-slate-300 rounded-lg font-semibold'><a>Nearby You</a></li>
                     </ul>
                 </div>
                 {/* <button className="btn h-fit btn-accent btn-xs sm:btn-sm md:btn-md"></button> */}
