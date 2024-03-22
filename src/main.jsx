@@ -10,6 +10,8 @@ import {
 import Main from './Layout/Main.jsx';
 import Home from './Home/Home.jsx';
 import AdminHome from './AdminPanel/AdminHome/AdminHome.jsx';
+import Profile from './ProfilePage/Profile.jsx';
+import SearchPage from './SearchPage/SearchPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: 'profile',
+        element: <Profile></Profile>
+      },
+      {
+        path: 'search',
+        element: <SearchPage></SearchPage>
       },
       {
         path: 'adminHome',
