@@ -28,15 +28,15 @@ const Navbar = () => {
             </div>
 
 
-                <div className='flex flex-col justify-center items-center mt-5'>
-            <Link to='/profile'>
+            <div className='flex flex-col justify-center items-center mt-5'>
+                <Link to='/profile'>
                     <div className="avatar">
                         <div className="w-12 rounded-full ring ring-primary">
                             <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                         </div>
                     </div>
-            </Link>
-                </div>
+                </Link>
+            </div>
             {/* Temporary button for admin panel */}
             {/* <div className='w-full flex flex-row items-center justify-center gap-5'>
                 <Link to='/adminHome' className=''><button className='bg-indigo-300 py-3 px-8 font-semibold mt-10 rounded-full w-fit '>Admin-Home</button></Link>
