@@ -1,4 +1,7 @@
 import React from 'react';
+import { MdAlternateEmail } from "react-icons/md";
+import { FaUserEdit } from "react-icons/fa";
+import { RiLockPasswordFill } from "react-icons/ri";
 
 const Profile = () => {
     return (
@@ -12,6 +15,12 @@ const Profile = () => {
                 </div>
                 <div className='bg-slate-300 min-h-screen p-5 rounded-lg w-44'>
                     <h1 className='text-center mt-2 font-semibold text-lg'>Swapnil Roy</h1>
+                    <div className='mt-5 text-center'>
+                        <h1 className='text-md font-bold underline underline-offset-2'>User Information</h1>
+                        <div>
+                            <p></p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -20,8 +29,20 @@ const Profile = () => {
 
                 <h1 className='text-2xl font-bold text-white mb-5'>Edit Information</h1>
 
-                <div>
+                <div className='flex flex-col gap-5'>
                     <input type="text" placeholder="Type here" className="input w-full max-w-xs" />
+                    <label className="input input-bordered flex items-center gap-2 text-white">
+                        <MdAlternateEmail/>
+                        <input type="text" className="grow rounded-sm px-3" placeholder="Email" />
+                    </label>
+                    <label className="input input-bordered flex items-center gap-2 text-white">
+                        <FaUserEdit/>
+                        <input type="text" className="grow rounded-sm px-3" placeholder="Username" />
+                    </label>
+                    <label className="input input-bordered flex items-center gap-2 text-white">
+                        <RiLockPasswordFill/>
+                        <input type="password" className="grow rounded-sm px-3" placeholder='Password' />
+                    </label>
                 </div>
             </div>
         </div>
