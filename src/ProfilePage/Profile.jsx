@@ -1,7 +1,8 @@
 import React from 'react';
-import { MdAlternateEmail } from "react-icons/md";
+import { MdAlternateEmail, MdLocationPin  } from "react-icons/md";
 import { FaUserEdit } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
+
 
 const Profile = () => {
     return (
@@ -43,6 +44,11 @@ const Profile = () => {
                         <RiLockPasswordFill/>
                         <input type="password" className="grow rounded-sm px-3" placeholder='Password' />
                     </label>
+                    <label className="input input-bordered flex items-center gap-2 text-white">
+                        <MdLocationPin />
+                        <input type="text" className="grow rounded-sm px-3" placeholder='Location' />
+                    </label>
+                    
                 </div>
             </div>
         </div>
