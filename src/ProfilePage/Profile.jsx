@@ -2,6 +2,7 @@ import React from 'react';
 import { MdAlternateEmail, MdLocationPin  } from "react-icons/md";
 import { FaUserEdit } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
+import { FaPhone } from "react-icons/fa6";
 
 
 const Profile = () => {
@@ -47,6 +48,10 @@ const Profile = () => {
                     <label className="input input-bordered flex items-center gap-2 text-white">
                         <MdLocationPin />
                         <input type="text" className="grow rounded-sm px-3" placeholder='Location' />
+                    </label>
+                    <label className="input input-bordered flex items-center gap-2 text-white">
+                        <FaPhone />
+                        <input type="number" className="grow rounded-sm px-3" placeholder='Phone Number' />
                     </label>
                     
                 </div>
