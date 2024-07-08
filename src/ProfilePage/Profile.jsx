@@ -1,9 +1,9 @@
 import React from 'react';
-import { MdAlternateEmail, MdLocationPin  } from "react-icons/md";
+import { MdAlternateEmail, MdLocationPin } from "react-icons/md";
 import { FaUserEdit } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { FaPhone } from "react-icons/fa6";
-
+import { IoFastFood } from "react-icons/io5";
 
 const Profile = () => {
     return (
@@ -34,15 +34,15 @@ const Profile = () => {
                 <div className='flex flex-col gap-5'>
                     <input type="text" placeholder="Type here" className="input w-full max-w-xs" />
                     <label className="input input-bordered flex items-center gap-2 text-white">
-                        <MdAlternateEmail/>
+                        <MdAlternateEmail />
                         <input type="text" className="grow rounded-sm px-3" placeholder="Email" />
                     </label>
                     <label className="input input-bordered flex items-center gap-2 text-white">
-                        <FaUserEdit/>
+                        <FaUserEdit />
                         <input type="text" className="grow rounded-sm px-3" placeholder="Username" />
                     </label>
                     <label className="input input-bordered flex items-center gap-2 text-white">
-                        <RiLockPasswordFill/>
+                        <RiLockPasswordFill />
                         <input type="password" className="grow rounded-sm px-3" placeholder='Password' />
                     </label>
                     <label className="input input-bordered flex items-center gap-2 text-white">
@@ -53,7 +53,14 @@ const Profile = () => {
                         <FaPhone />
                         <input type="number" className="grow rounded-sm px-3" placeholder='Phone Number' />
                     </label>
-                    
+                    <label className="input input-bordered flex items-center gap-2 text-white">
+                        <IoFastFood />
+                        <input type="text" className="grow rounded-sm px-3" placeholder='Favourite Food' />
+                    </label>
+
+                    <div className="form-control mt-6">
+                        <button className="btn btn-outline btn-accent uppercase">Save Changes</button>
+                    </div>
                 </div>
             </div>
         </div>
